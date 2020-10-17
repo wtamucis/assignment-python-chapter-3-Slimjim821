@@ -53,3 +53,75 @@ age = 22
 if 18 < + age < 65:
     print("Eligible")
 print("*" * 30)
+
+# Chapter 3.8 For Loops
+print("Chapter 3.8 For Loops")
+for number in range(3):
+    print("attempt", number + 1, (number + 1) * ".")
+for number in range(1, 4):
+    print("attempt", number + 1, (number + 1) * ".")
+for number in range(1, 10, 2):
+    print("attempt", number + 1, (number + 1) * ".")
+for number in range(10, 0, -1):
+    print(number)
+print("*" * 30)
+
+# Chapter 3.9 For...Else
+print("Chapter 3.9 For...Else")
+successful = False
+for number in range(3):
+    print("attempt")
+    if successful:
+        print("Successful")
+        break
+else:
+    print("Attempted 3 times and failed")
+print("*" * 30)
+
+successful = True
+for number in range(3):
+    print("Attempt")
+    if successful:
+        print("Successful")
+        break
+else:
+    print("Attempted 3 times and failed")
+print("*" * 30)
+
+# Chapter 3.10 Nested Loops
+print("Chapter 3.10 Nested Loops")
+for x in range(5):
+    for y in range(3):
+        print(f"({x}, {y})")
+
+# Chapter 3.11 Iterables
+print("Chapter 3.11 Iterables")
+for x in [1, 2, 3, 4]:
+    print(x)
+print("*" * 30)
+
+# Chapter 3.12 While Loops
+print("Chapter 3.12 While Loops")
+command = ""
+while command.lower() != "quit":
+    command = input("Enter any command or 'quit' >")
+    print("ECHO", command)
+print("*" * 30)
+
+# Chapter 3.13 Infinite Loops
+print("Chapter 3.13 Infinite Loops")
+while True:
+    command = input("Enter any command or 'quit' >")
+    print("ECHO", command)
+    if command.lower() == "quit":
+        break
+
+# Chapter 3.14 Exercise
+print("Chapter 3.14 Exercise")
+counter = 0
+for number in range(1, 10):
+    if number % 2 == 0:
+        print(number)
+        counter += 1
+print(f"we have {counter} even numbers")
+print("*" * 30)
